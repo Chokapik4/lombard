@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawn Shop Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>PAWN SHOP MANAGEMENT SYSTEM</h1>
+            <span id="balance">Saldo: $0</span>
+        </div>
+        <div class="sidebar">
+            <h2>Statystyki</h2>
+            <p>Wykonane zlecenia: <span id="completedMissions">0</span></p>
+            <p>Dzienny limit: <span id="acceptedMissions">0</span>/8</p>
+            <p>Pracownicy: <span id="employeeCount">0</span></p>
+            <p>Poziom firmy: <span id="level">1</span></p>
+            <p>EXP: <span id="exp">0</span>/<span id="nextExp">500</span></p>
+            <p>Łączne zarobki dzisiaj: $<span id="earnings">0</span></p>
+        </div>
+        <div class="content">
+            <div class="tabs">
+                <button class="tab-button active" onclick="openTab('available')">Dostępne</button>
+                <button class="tab-button" onclick="openTab('active')">W trakcie</button>
+                <button class="tab-button" onclick="openTab('history')">Historia</button>
+                <button class="tab-button" onclick="openTab('shop')">Sklep (Wystaw)</button>
+            </div>
+            <div id="available" class="tab-content active">
+                <h2>Dostępne zlecenia</h2>
+                <div id="availableMissions"></div>
+            </div>
+            <div id="active" class="tab-content">
+                <h2>Zlecenia w trakcie</h2>
+                <div id="activeMissions"></div>
+            </div>
+            <div id="history" class="tab-content">
+                <h2>Historia zleceń</h2>
+                <div id="missionHistory"></div>
+            </div>
+            <div id="shop" class="tab-content">
+                <h2>Wystaw przedmiot</h2>
+                <div id="shopItems"></div>
+                <div id="listItemForm">
+                    <input type="text" id="itemName" placeholder="Nazwa przedmiotu">
+                    <input type="number" id="itemPrice" placeholder="Cena">
+                    <input type="text" id="itemDescription" placeholder="Opis (opcjonalny)">
+                    <button onclick="listItem()">Wystaw</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

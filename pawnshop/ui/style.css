@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    height: 600px;
+    background: #1a1a2e;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.header {
+    background: #f4a261;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 20px;
+    color: #000;
+}
+
+#balance {
+    font-size: 16px;
+    color: #000;
+}
+
+.sidebar {
+    width: 30%;
+    background: #16213e;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sidebar p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.content {
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background: #4a4e69;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tab-button.active {
+    background: #f4a261;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.mission-item, .shop-item {
+    background: #2a2e4c;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.mission-item h3, .shop-item h3 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.mission-item p, .shop-item p {
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.mission-item button, .shop-item button {
+    background: #2cb67d;
+    border: none;
+    padding: 5px 10px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.history-item {
+    background: #2a2e4c;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.history-item p {
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+#listItemForm {
+    margin-top: 10px;
+}
+
+#listItemForm input {
+    width: 100%;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+#listItemForm button {
+    background: #f4a261;
+    width: 100%;
+}
